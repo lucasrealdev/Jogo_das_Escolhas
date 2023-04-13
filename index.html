@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>As Aventuras de Lucas</title>
+  <link rel="icon" type="image/x-icon" href="/img/icon.png">
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <main>
+    <!--introducao-->
+    <h1 class="titulo">As aventuras de Lucas</h1>
+    <div class="content">
+      <div class="resumo tab" id="resumo">
+        <p>
+          Bem-vindo As aventuras de Lucas! Neste jogo, você vai acompanhar a
+          jornada de um aventureiro, tomando decisões importantes ao longo do
+          caminho. Suas escolhas afetarão o destino do personagem, levando a
+          morte ou o sucesso. Boa sorte!
+        </p>
+        <img src="/img/back.png" alt="" />
+        <a href="#enredo"><button><span>Continuar</span></button></a>
+      </div>
+      <div class="enredo tab" id="enredo">
+        <p>
+          Você é um aventureiro corajoso chamado Lucas em busca de desafios
+          emocionantes. Um dia, enquanto explorava uma misteriosa floresta,
+          você encontra uma antiga estátua com inscrições enigmáticas. Ao
+          tocar nela, você é transportado para um mundo desconhecido, onde é
+          desafiado a fazer escolhas que podem determinar seu destino. A cada
+          pergunta que você responde, seu caminho se desdobra, com opções
+          surpreendentes que podem levar à vida ou à morte.
+        </p>
+
+        <a href="#p1"><button><span>Continuar</span></button></a>
+      </div>
+
+      <!--Perguntas-->
+      <section class="p1 tab" id="p1">
+        <p>
+          Você se depara com um rio turbulento. A ponte parece precária, mas
+          você está com pressa. O que você faz?
+        </p>
+        <img src="/img/rio.png" alt="" />
+        <a href="#b1" class="escolhas">Procura uma passagem alternativa.</a>
+        <a href="#a1" class="escolhas">Arrisca e atravessa a ponte.</a>
+      </section>
+
+      <section class="p2 tab" id="p2">
+        <p>
+          Você encontra um tesouro brilhante no chão. Parece valioso, mas
+          também está protegido por armadilhas. O que você faz?
+        </p>
+        <img src="/img/tesouro.jpeg" alt="" />
+        <a href="#a2" class="escolhas">Tenta pegar o tesouro com cuidado.</a>
+        <a href="#b2" class="escolhas">Deixa o tesouro onde está e continua sua jornada.</a>
+      </section>
+
+      <section class="p3 tab" id="p3">
+        <p>
+          Você encontra uma poção em uma clareira misteriosa. Há um rótulo
+          escrito "Beber para a cura". O que você faz?
+        </p>
+        <img src="/img/pocao.jpg" alt="" />
+        <a href="#a3" class="escolhas">Beber a poção imediatamente.</a>
+        <a href="#b3" class="escolhas">Guardar a poção na mochila para usar mais tarde.</a>
+      </section>
+
+      <section class="p4 tab" id="p4">
+        <p>
+          Você se depara com uma criatura misteriosa bloqueando o caminho.
+          Parece ameaçadora, mas não te ataca imediatamente. O que você faz?
+        </p>
+        <img src="/img/criatura.jpg" alt="" />
+        <a href="#b4" class="escolhas">Tenta se comunicar pacificamente com a criatura.</a>
+        <a href="#a4" class="escolhas">Tenta lutar contra a criatura.</a>
+      </section>
+
+      <section class="p5 tab" id="p5">
+        <p>
+          Você encontra um baú trancado em uma sala escura. Há uma placa
+          dizendo: "Aquele que for ganancioso, perecerá". O que você faz?
+        </p>
+        <img src="/img/bau.jpg" alt="" />
+        <a href="#a5" class="escolhas">Abre o baú imediatamente, ignorando a placa.</a>
+        <a href="#b5" class="escolhas">Deixa o baú de lado e continua explorando.</a>
+      </section>
+
+      <section class="p6 tab" id="p6">
+        <p>
+          Você encontra um atalho que promete te economizar tempo, mas parece
+          ser traiçoeiro. O que você faz?
+        </p>
+        <img src="/img/atalho.jpg" alt="" />
+        <a href="#a6" class="escolhas">Decide arriscar e seguir pelo atalho.</a>
+        <a href="#b6" class="escolhas">Opta por não arriscar e continua pelo caminho mais seguro.</a>
+      </section>
+
+      <section class="p7 tab" id="p7">
+        <p>
+          Você se depara com uma ponte quebrada sobre um abismo profundo. Não
+          há outra maneira de atravessar. O que você faz?
+        </p>
+        <img src="/img/ponte.jpg" alt="" />
+        <a href="#b7" class="escolhas">Busca uma maneira de consertar a ponte antes de
+          atravessar.</a>
+        <a href="#a7" class="escolhas">Tenta pular sobre o abismo.</a>
+      </section>
+
+      <section class="p8 tab" id="p8">
+        <p>
+          Você encontra um poço profundo com uma corda pendurada, indicando a
+          possibilidade de descer. O que você faz?
+        </p>
+        <img src="/img/poco.jpg" alt="" />
+        <a href="#a8" class="escolhas">Decide descer pelo poço usando a corda.</a>
+        <a href="#b8" class="escolhas">Opta por não arriscar e continua seu caminho.</a>
+      </section>
+
+      <section class="p9 tab" id="p9">
+        <p>
+          Você encontra um pergaminho antigo com uma magia poderosa escrita
+          nele. Não há indicações claras sobre seu uso. O que você faz?
+        </p>
+        <img src="/img/pergaminho.jpg" alt="" />
+        <a href="#a9" class="escolhas">Decide não mexer no pergaminho, com medo dos possíveis
+          efeitos colaterais.</a>
+        <a href="#b9" class="escolhas">Decide estudar e aprender a magia do pergaminho.</a>
+      </section>
+
+      <section class="p10 tab" id="p10">
+        <p>
+          Você se depara com um dragão gigante bloqueando seu caminho. Ele parece feroz e está prestes a atacar você. O que você faz?
+        </p>
+        <img src="/img/dragao.jpg" alt="" />
+        <a href="#b10" class="escolhas">Decide enfrentar o dragão, usando todas as suas habilidades para tentar derrotá-lo.</a>
+        <a href="#a10" class="escolhas">Decide recuar e tentar encontrar um caminho alternativo, evitando o confronto com o dragão.</a>
+      </section>
+
+      <!-- Acoes -->
+      <section class="a1 tab" id="a1">
+        <p>
+          Você decide arriscar e atravessa a ponte. Infelizmente, ela desaba
+          sob seus pés e você é arrastado pela correnteza. Você se afoga. Fim
+          de jogo.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <section class="a2 tab" id="a2">
+        <p>
+          Você decide tentar pegar o tesouro com cuidado, mas uma armadilha é
+          ativada e dardos venenosos são disparados em sua direção. Você é
+          atingido e cai inconsciente. Fim de jogo.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <section class="a3 tab" id="a3">
+        <p>
+          Você decide beber a poção, confiando que ela irá curá-lo. No
+          entanto, assim que você ingere a poção, você sente uma dor intensa
+          no estômago e cai no chão, descobrindo tarde demais que era uma
+          poção venenosa. Você não sobrevive. Fim de jogo.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <section class="a4 tab" id="a4">
+        <p>
+          Você decide lutar contra a criatura, mas logo percebe que está em
+          desvantagem. Ela é mais poderosa do que você imaginava e te derrota
+          facilmente. Fim de jogo.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <section class="a5 tab" id="a5">
+        <p>
+          Você decide ignorar a placa e abrir o baú ansiosamente em busca de
+          tesouros. No entanto, assim que você abre o baú, uma armadilha é
+          ativada e dardos venenosos são lançados em sua direção. Você é
+          atingido e não consegue se recuperar a tempo, resultando em sua
+          morte.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <section class="a6 tab" id="a6">
+        <p>
+          Você decide arriscar e seguir pelo atalho. Infelizmente, o atalho é
+          repleto de armadilhas mortais que você não consegue evitar. Você é
+          pego em uma armadilha e não consegue escapar. Fim de jogo.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <section class="a7 tab" id="a7">
+        <p>
+          Você decide tentar pular sobre o abismo, mas subestima a distância e
+          não consegue chegar do outro lado. Você cai no abismo e não
+          sobrevive. Fim de jogo.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <section class="a8 tab" id="a8">
+        <p>
+          Você decide descer pelo poço usando a corda, mas a corda se rompe no
+          meio Você cai em queda livre, sem poder fazer nada para se segurar.
+          Infelizmente, a queda é fatal e você não sobrevive. Fim de jogo.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <section class="a9 tab" id="a9">
+        <p>
+          Você decide não mexer no pergaminho e guardá-lo em sua mochila,
+          evitando o risco de usar uma magia desconhecida. No entanto,
+          enquanto você continua sua jornada, o pergaminho começa a emitir uma
+          energia maligna, que consome sua mochila e seu corpo em chamas,
+          resultando em sua morte.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+
+      <section class="a10 tab" id="a10">
+        <p>
+          Você decide recuar e tentar encontrar um caminho alternativo, evitando o confronto com o dragão. No entanto,
+          ao tentar fugir, você acaba se deparando com outro dragão que lança um sopro de fogo em sua direção, resultando em morte. Fim de jogo.
+        </p>
+        <img src="/img/morte.png" class="morte" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+
+      <!--Escolhas B-->
+      <section class="b1 tab" id="b1">
+        <p>
+          Você decide procurar uma passagem alternativa. Depois de uma busca
+          cuidadosa, encontra uma trilha que leva a uma ponte mais estável.
+          Você atravessa em segurança e avança para a próxima pergunta.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p2"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b2 tab" id="b2">
+        <p>
+          Você decide deixar o tesouro onde está e continua sua jornada. Mais
+          adiante, você encontra um baú com uma recompensa ainda maior. Você
+          se sente aliviado por não ter caído na armadilha do tesouro
+          anterior.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p3"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b3 tab" id="b3">
+        <p>
+          Você opta por guardar a poção na mochila para uso futuro,
+          desconfiando da sua origem. Mais tarde, você encontra um aliado
+          ferido que precisa de uma cura urgente. Você usa a poção para
+          curá-lo e ele se junta a você em sua jornada, tornando-se um valioso
+          companheiro. Você continua sua aventura com um novo aliado ao seu
+          lado.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p4"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b4 tab" id="b4">
+        <p>
+          Você decide tentar se comunicar pacificamente com a criatura. Para
+          sua surpresa, a criatura se revela amigável e oferece ajuda em sua
+          jornada. Ela revela informações valiosas sobre o próximo desafio que
+          você enfrentará, permitindo que você prossiga com segurança para uma
+          sala.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p5"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b5 tab" id="b5">
+        <p>
+          Você decide não arriscar e deixa o baú de lado, continuando a
+          explorar a sala em busca de outras saídas. Você encontra uma
+          passagem secreta que leva a um tesouro ainda maior do que o que
+          estaria no baú, e você coleta os tesouros com segurança, evitando a
+          armadilha.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p6"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b6 tab" id="b6">
+        <p>
+          Você opta por não arriscar e continua pelo caminho mais seguro.
+          Embora demore um pouco mais, você chega ao seu destino em segurança
+          e sem enfrentar perigos.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p7"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b7 tab" id="b7">
+        <p>
+          Você decide buscar uma maneira de consertar a ponte antes de
+          atravessar. Com habilidade e determinação, você consegue consertá-la
+          e atravessa em segurança para a próxima fase do jogo.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p8"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b8 tab" id="b8">
+        <p>
+          Você opta por não arriscar e continua seu caminho, deixando o poço
+          para trás. Mais tarde, você encontra uma passagem secreta que te
+          leva a uma câmara secreta cheia de tesouros e recompensas. Você
+          coleta o tesouro e completa sua jornada com sucesso, alcançando seu
+          objetivo final. Parabéns, você venceu o jogo!
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p9"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b9 tab" id="b9">
+        <p>
+          Você decide estudar e aprender a magia do pergaminho, dedicando
+          tempo e esforço para dominá-la. A magia revela-se extremamente
+          poderosa e você a utiliza em suas futuras aventuras, obtendo
+          vantagens significativas.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#p10"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="b10 tab" id="b10">
+        <p>
+          Você decide enfrentar o dragão em uma batalha épica, confiando em suas habilidades de combate. Com uma
+          estratégia astuta e uso inteligente de suas habilidades, você consegue matar o dragão usando todas as suas
+          habilidades e então volta para a estatua da qual você começou, porém agora você tem novas habilidades.
+        </p>
+        <img src="/img/passou.png" class="passou" />
+        <a href="#gameover"><button><span>Continuar</span></button></a>
+      </section>
+      <section class="gameover tab" id="gameover">
+        <p>
+          Essas são apenas algumas das reviravoltas surpreendentes que podem
+          acontecer em uma jornada de aventura. Lembre-se de que, às vezes, as
+          escolhas aparentemente óbvias podem ter consequências inesperadas.
+          Esteja preparado para enfrentar desafios e tome suas decisões com
+          sabedoria para garantir que seu personagem sobreviva e prospere em
+          sua busca! A história continua, com mais desafios e escolhas
+          emocionantes aguardando o destemido aventureiro, Lucas Real.
+          <br>
+        <h4 class="continuacao">CONTINUAÇÃO EM BREVE</h4>.
+        </p>
+        <img src="img/parabens.jpg" alt="" />
+        <a href="#"><button><span>Recomeçar</span></button></a>
+      </section>
+      <a href="#resumo" class="start"><span>Começar</span></a>
+    </div>
+  </main>
+</body>
+
+</html>
