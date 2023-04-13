@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(35, 37, 37, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.titulo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.tab {
+  background-color: rgba(145, 142, 142, 0.295);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 3px solid #0c1022;
+  width: 100%;
+  max-width: 400px;
+  min-height: 0;
+  animation: fadeInLeft 0.3s;
+}
+
+.tab button {
+  position: relative;
+  background-color: transparent;
+  padding: 7px 20px 7px 20px;
+  margin: 30px 0px 10px 0px;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 120px;
+  height: 37px;
+}
+
+.tab button::before {
+  width: 85px;
+  height: 28px;
+  content: "";
+  position: absolute;
+  padding: 7px 20px 7px 20px;
+  background-image: conic-gradient(transparent,
+      transparent,
+      transparent,
+      #00ccff);
+  animation: animate 4s linear infinite;
+}
+
+.tab button::after {
+  width: 85px;
+  height: 28px;
+  content: "";
+  position: absolute;
+  padding: 7px 20px 7px 20px;
+  background-image: conic-gradient(transparent,
+      transparent,
+      transparent,
+      #d400d4);
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+.tab button span {
+  position: absolute;
+  inset: 1px;
+  background: #0c1022;
+  border-radius: 4px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.tab button:hover {
+  transition: 0.2s;
+  scale: 1.02;
+}
+
+.tab p, .continuacao{
+  text-align: justify;
+  margin: 10px 15px 20px 15px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.links {
+  display: none;
+}
+
+.start {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  justify-content: center;
+  align-items: center;
+}
+
+.start span {
+  position: relative;
+  z-index: 2;
+}
+
+.start:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: red;
+  transition: all 0.35s;
+}
+
+.start:hover {
+  color: #fff;
+}
+
+.start:hover:after {
+  width: 100%;
+}
+
+.tab img {
+  width: 65%;
+  height: 250px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.resumo img {
+  width: 65%;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.tab:target{
+  display: flex;
+}
+
+.wrapper a:focus {
+  position: absolute;
+}
+
+.tab:target~.start {
+  display: none;
+}
+
+.escolhas {
+  width: 90%;
+  height: 50px;
+  background-color: white;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.tab a:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.escolhas:hover {
+  transition: 0.2s;
+  scale: 1.02;
+  border: 2px solid #0c1022;
+}
+
+.content section,
+.enredo,
+.resumo {
+  display: none;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo {
+    font-size: 25px;
+  }
+}
