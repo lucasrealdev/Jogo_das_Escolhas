@@ -4,7 +4,3 @@ um jogo simples de escolhas onde o seu objetivo como um explorador é sobreviver
 ## Requisitos para a execução do site
 
 um computador que tenha um navegador como: google chrome, opera, edge e outros
-
-### Link
-
-asaventurasdelucas.netlify.app
